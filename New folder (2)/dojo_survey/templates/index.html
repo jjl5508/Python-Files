@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form class="row g-3" action = '/results' method = 'POST'>
+        <div class="col-md-6">
+          <label for="inputname4" class="form-label">Full Name </label>
+          <input name="Full Name" type="name" class="form-control" id="inputname4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputemail4" class="form-label">Email</label>
+          <input name = "email" type="email" class="form-control" id="inputemail4">
+        </div>
+        <div class="col-md-4">
+            <label for="inputlocation" class="form-label">Dojo Location</label>
+            <select name= "Location" id="inputlocation" class="form-select">
+              <option selected>Choose...</option>
+              <option>San Jose</option>
+              <option>Orange County</option>
+              <option>Dallas</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input name= "City" type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Favorite Language</label>
+          <select name= "Language" id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>MERN</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input name= "Zip" type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+</body>
+</html>
